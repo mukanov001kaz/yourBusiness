@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     // height: 100vh;
-    height: 857px;
+    min-height: 857px;
     /* background: url("./image/bg.png") center center/ cover no-repeat fixed; */
     background: url("../image/bg.png") center center/ cover no-repeat;
     @media (max-width: 768px) {
@@ -216,7 +216,7 @@
     &__marketing-cards {
         width: 328px;
         padding: clamp(1.25rem, calc(0.98rem + 1.34vw), 2.19rem) clamp(0.94rem, calc(0.67rem + 1.34vw), 1.88rem);
-        background-color: rgba(141, 232, 6, 0.989);
+        background-color: rgba(255, 255, 255, 1);
         transition: all 0.5s;
         @media (max-width: 992px) {
             width: 240px;
@@ -246,11 +246,15 @@
     }
 
     &__marketing-cards:hover {
-        background-color: rgba(0, 160, 193, 1);
+        @media (min-width: 769px) {
+            background-color: rgba(0, 160, 193, 1);
+        }
     }
 
     &__marketing-cards:hover * {
-        color: #fff;
-        fill: white;
+        @media (min-width: 769px) {
+            color: #fff;
+            fill: white;
+        }
     }
 }
