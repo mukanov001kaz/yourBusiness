@@ -1,8 +1,6 @@
 .practice {
     background-color: rgba(246, 143, 143, 1);
     padding: clamp(3.75rem, calc(2.68rem + 5.36vw), 7.5rem) 0 clamp(2.5rem, calc(1.79rem + 3.57vw), 5rem) 0;
-    &__container {
-    }
 
     &__title {
         text-align: center;
