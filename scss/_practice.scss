@@ -25,10 +25,20 @@
 
     &__card-items {
         width: 230px;
+        min-height: 300px;
+        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__card-auto {
     }
 
     &__card-description {
-        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding: clamp(1.25rem, calc(1.07rem + 0.89vw), 1.88rem);
         & > .title__fz16 {
             margin-bottom: 15px;

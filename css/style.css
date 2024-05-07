@@ -369,9 +369,16 @@ body {
 }
 .practice__card-items {
   width: 230px;
+  min-height: 300px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .practice__card-description {
-  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: clamp(1.25rem, 1.07rem + 0.89vw, 1.88rem);
 }
 .practice__card-description > .title__fz16 {
