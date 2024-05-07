@@ -1,0 +1,48 @@
+.about {
+    padding: clamp(2.5rem, calc(1.79rem + 3.57vw), 5rem) 0;
+    background-color: rgba(252, 168, 168, 1);
+    &__container {
+    }
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        text-align: center;
+        color: rgba(115, 115, 115, 1);
+        margin-bottom: 50px;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__card-items {
+        width: 240px;
+        height: 209px;
+        background-color: rgba(255, 255, 255, 1);
+        padding: 30px clamp(1.25rem, calc(0.89rem + 1.79vw), 2.5rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & :is(img, span) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__card-title {
+        color: rgba(115, 115, 115, 1);
+        text-transform: uppercase;
+    }
+}
