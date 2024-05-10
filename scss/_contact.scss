@@ -1,0 +1,85 @@
+.contact {
+    background-color: rgba(243, 243, 243, 1);
+    padding: clamp(2.5rem, calc(1.79rem + 3.57vw), 5rem) 0;
+    &__box {
+    }
+
+    &__box-title {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    &__box-subtitle {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__block-items {
+        width: clamp(14.56rem, calc(7.76rem + 14.16vw), 20.5rem);
+        background-color: rgba(255, 255, 255, 1);
+        padding: clamp(0.63rem, calc(-2.24rem + 5.96vw), 3.13rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.4s;
+
+        @media (max-width: 768px) {
+            width: clamp(18.75rem, calc(17.5rem + 6.25vw), 20.5rem);
+            padding: clamp(1.25rem, calc(-0.09rem + 6.7vw), 3.13rem);
+        }
+    }
+    &__block-items:hover {
+        @media (min-width: 769px) {
+            background-color: rgba(37, 43, 66, 1);
+            transform: scale(1.1);
+        }
+    }
+
+    &__block-items:hover * {
+        @media (min-width: 769px) {
+            color: #fff;
+            fill: white;
+        }
+    }
+
+    &__block-image {
+    }
+
+    &__block-email {
+        font-weight: 600;
+        color: rgba(37, 43, 66, 1);
+    }
+
+    &__block-title {
+        font-weight: 700;
+        color: rgba(37, 43, 66, 1);
+    }
+
+    :is(&__block-image, &__block-email, &__block-title) {
+        margin-bottom: 15px;
+    }
+
+    &__block-btn {
+        padding: 10px 20px;
+        text-decoration: none;
+        border: 1px solid rgba(255, 166, 43, 1);
+        border-radius: 5px;
+        background: transparent;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 600;
+        color: rgba(255, 166, 43, 1);
+    }
+}
